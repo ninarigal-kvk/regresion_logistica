@@ -1,0 +1,46 @@
+{
+  "train": {
+    "roc_auc": 0.8446771605340475,
+    "pr_auc": 0.4181910087268958,
+    "brier": 0.02186581549223407,
+    "positive_rate": 0.03130895814408497
+  },
+  "test": {
+    "roc_auc": 0.9458400147976985,
+    "pr_auc": 0.569342236170476,
+    "brier": 0.013048709872731048,
+    "positive_rate": 0.022375950533835166
+  },
+  "features_used": [
+    "n_qleads_90d",
+    "n_bookings_90d",
+    "n_registers_90d",
+    "n_online_schedules_90d",
+    "total_signals_90d",
+    "recency_last_qlead",
+    "recency_last_booking",
+    "recency_last_register",
+    "recency_last_online_schedule",
+    "reg_km_log1p",
+    "reg_km_trailing_zeros",
+    "reg_km_mod1000_norm",
+    "reg_km_mod100_norm",
+    "reg_km_is_round_1000",
+    "reg_km_is_round_500",
+    "reg_km_is_round_100",
+    "reg_km_is_round_50",
+    "reg_km_is_round_10"
+  ],
+  "test_thresholding": {
+    "topk_fraction": 0.1,
+    "threshold": 0.0395655546935609,
+    "confusion_matrix": {
+      "tn": 180572,
+      "fp": 23071,
+      "fn": 471,
+      "tp": 4190
+    },
+    "precision_at_k": 0.15369942408569018,
+    "recall_at_k": 0.8989487234499035
+  }
+}
